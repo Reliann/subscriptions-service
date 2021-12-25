@@ -7,10 +7,10 @@ require('./config/DB')
 const app = express()
 
 // init with node subscriptionsWS.js
-
+console.log(process.env.CINEMA_URL)
 const corsOptions ={
     origin: process.env.CINEMA_URL || '*', 
-    credentials:true,            //access-control-allow-credentials:true
+    credentials:true,            
     optionSuccessStatus:200,
     methods: "GET,PUT,PATCH,POST,DELETE"
  }
