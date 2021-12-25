@@ -9,7 +9,7 @@ const app = express()
 // init with node subscriptionsWS.js
 
 const corsOptions ={
-    origin: prosses.env.cinemaURL || '*', 
+    origin: prosses.env.CINEMA_URL || '*', 
     credentials:true,            //access-control-allow-credentials:true
     optionSuccessStatus:200,
     methods: "GET,PUT,PATCH,POST,DELETE"
