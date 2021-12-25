@@ -1,0 +1,30 @@
+{
+  "name": "subscriptions-service",
+  "version": "1.0.0",
+  "description": "provider for cinema ws",
+  "main": "subscriptionsWS.js",
+  "scripts": {
+    "start":"node subscriptionsWS.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Reliann/subscriptions-service.git"
+  },
+  "author": "rell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Reliann/subscriptions-service/issues"
+  },
+  "homepage": "https://github.com/Reliann/subscriptions-service#readme",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "mongoose": "^6.1.3"
+  },
+  "engines": {
+    "node": "14.18.0",
+    "npm":"6.14.15"
+  }
+}

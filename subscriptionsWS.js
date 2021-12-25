@@ -9,7 +9,7 @@ const app = express()
 // init with node subscriptionsWS.js
 
 const corsOptions ={
-    origin:'*', 
+    origin: prosses.env.cinemaURL || '*', 
     credentials:true,            //access-control-allow-credentials:true
     optionSuccessStatus:200,
     methods: "GET,PUT,PATCH,POST,DELETE"
@@ -24,6 +24,6 @@ app.use('/subscriptions',subscriptionsController) //controller for students
 app.use('/movies',moviesController)
 app.use('/members',membersController)
 
-app.listen(8001,
-    () => console.log("The server is Running on port 8001")
+app.listen(prosses.env.PORT || 8001,
+    () => console.log("The server is Running ")
 );
