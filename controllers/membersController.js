@@ -1,6 +1,6 @@
 const router = require('express').Router()
 const membersBl = require('../BLs/membersBl')
-const subsBl = require('../Bls/subscriptionsBl') 
+const subsBl = require('../BLs/subscriptionsBl') 
 
 membersBl.pullData()
 

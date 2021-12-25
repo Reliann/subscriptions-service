@@ -1,6 +1,6 @@
 const router = require('express').Router()
 const moviesBL = require('../BLs/moviesBl')
-const subscriptionsBl = require('../Bls/subscriptionsBl')
+const subscriptionsBl = require('../BLs/subscriptionsBl')
 
 // cheak if I need to pull data to db
 moviesBL.pullData()
