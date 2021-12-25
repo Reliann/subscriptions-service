@@ -24,6 +24,6 @@ app.use('/subscriptions',subscriptionsController) //controller for students
 app.use('/movies',moviesController)
 app.use('/members',membersController)
 
-app.listen(prosses.env.PORT || 8001,
+app.listen(process.env.PORT || 8001,
     () => console.log("The server is Running ")
 );
